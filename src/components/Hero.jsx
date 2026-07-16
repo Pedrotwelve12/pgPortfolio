@@ -58,7 +58,9 @@ export default function Hero() {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: { xs: 'flex-start', md: 'center' },
+        pt: { xs: '88px', md: 0 },
+        pb: { xs: 8, md: 0 },
         position: 'relative',
         overflow: 'hidden',
       }}
