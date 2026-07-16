@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Box, Typography, Button, Stack, IconButton, Container, Divider } from '@mui/material';
+import { Box, Typography, Button, Stack, IconButton, Container, Divider, useTheme } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
@@ -19,6 +19,8 @@ const FADE_UP = {
 
 export default function Hero() {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isDark = theme.palette.mode === 'dark';
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayed, setDisplayed] = useState('');
   const [typing, setTyping] = useState(true);
@@ -69,10 +71,11 @@ export default function Hero() {
         aria-hidden="true"
         sx={{
           position: 'absolute', inset: 0,
-          backgroundImage: `
-            linear-gradient(rgba(100,255,218,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(100,255,218,0.03) 1px, transparent 1px)
-          `,
+          backgroundImage: isDark
+            ? `linear-gradient(rgba(100,255,218,0.03) 1px, transparent 1px),
+               linear-gradient(90deg, rgba(100,255,218,0.03) 1px, transparent 1px)`
+            : `linear-gradient(rgba(13,148,136,0.08) 1px, transparent 1px),
+               linear-gradient(90deg, rgba(13,148,136,0.08) 1px, transparent 1px)`,
           backgroundSize: '64px 64px',
           pointerEvents: 'none',
         }}
@@ -83,7 +86,9 @@ export default function Hero() {
           position: 'absolute', top: '-20%', right: '-10%',
           width: { xs: 300, md: 700 }, height: { xs: 300, md: 700 },
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(100,255,218,0.07) 0%, transparent 70%)',
+          background: isDark
+            ? 'radial-gradient(circle, rgba(100,255,218,0.07) 0%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(13,148,136,0.13) 0%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />
@@ -93,7 +98,9 @@ export default function Hero() {
           position: 'absolute', bottom: '-15%', left: '-8%',
           width: { xs: 250, md: 500 }, height: { xs: 250, md: 500 },
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(124,58,237,0.09) 0%, transparent 70%)',
+          background: isDark
+            ? 'radial-gradient(circle, rgba(124,58,237,0.09) 0%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(124,58,237,0.10) 0%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />

@@ -1,6 +1,6 @@
 import React from 'react';
-import { ThemeProvider, CssBaseline, Box } from '@mui/material';
-import theme from './theme';
+import { Box } from '@mui/material';
+import { AppThemeProvider } from './ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,8 +12,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <AppThemeProvider>
       <Box sx={{ bgcolor: 'background.default', minHeight: '100vh' }}>
         <Navbar />
         <Hero />
@@ -24,7 +23,7 @@ function App() {
         <Contact />
         <Footer />
       </Box>
-    </ThemeProvider>
+    </AppThemeProvider>
   );
 }
 

@@ -18,7 +18,10 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import { navLinks } from '../data/portfolioData';
+import { useColorMode } from '../ThemeContext';
 
 const SECTION_IDS = ['about', 'skills', 'projects', 'experience', 'contact'];
 
@@ -76,6 +79,9 @@ export default function Navbar() {
     i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
   }, [i18n]);
 
+  const { toggleColorMode, mode: colorMode } = useColorMode();
+  const isDark = colorMode === 'dark';
+
   const isActive = (href) => href === `#${activeSection}`;
 
   return (
@@ -85,9 +91,13 @@ export default function Navbar() {
           position="fixed"
           elevation={0}
           sx={{
-            bgcolor: scrolled ? 'rgba(10,10,10,0.92)' : 'transparent',
+            bgcolor: scrolled
+              ? isDark ? 'rgba(10,10,10,0.92)' : 'rgba(248,250,252,0.92)'
+              : 'transparent',
             backdropFilter: scrolled ? 'blur(20px)' : 'none',
-            borderBottom: scrolled ? '1px solid rgba(100,255,218,0.08)' : 'none',
+            borderBottom: scrolled
+              ? `1px solid ${isDark ? 'rgba(100,255,218,0.08)' : 'rgba(13,148,136,0.12)'}`
+              : 'none',
             transition: 'background-color 0.3s ease, backdrop-filter 0.3s ease',
             overflow: 'hidden',
           }}
@@ -172,6 +182,21 @@ export default function Navbar() {
                 >
                   {i18n.language === 'en' ? 'ES' : 'EN'}
                 </Button>
+                <IconButton
+                  onClick={toggleColorMode}
+                  aria-label="Toggle color mode"
+                  size="small"
+                  sx={{
+                    ml: 0.5,
+                    color: 'text.secondary',
+                    border: '1px solid rgba(100,255,218,0.2)',
+                    borderRadius: 1.5,
+                    '&:hover': { color: 'primary.main', borderColor: 'primary.main', bgcolor: 'rgba(100,255,218,0.05)' },
+                    transition: 'all 0.2s',
+                  }}
+                >
+                  {isDark ? <LightModeOutlinedIcon fontSize="small" /> : <DarkModeOutlinedIcon fontSize="small" />}
+                </IconButton>
                 <Button
                   variant="outlined"
                   onClick={() => handleNav('#contact')}
@@ -209,7 +234,7 @@ export default function Navbar() {
         anchor="right"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
-        PaperProps={{ sx: { bgcolor: '#111', width: 280, p: 3 } }}
+        PaperProps={{ sx: { bgcolor: 'background.paper', width: 280, p: 3 } }}
       >
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
           <Typography
@@ -261,6 +286,25 @@ export default function Navbar() {
             </ListItem>
           ))}
           <ListItem sx={{ mt: 2, px: 0 }}>
+            <Button
+              fullWidth
+              onClick={toggleColorMode}
+              aria-label="Toggle color mode"
+              sx={{
+                color: 'text.secondary',
+                fontFamily: '"JetBrains Mono", monospace',
+                fontSize: '0.8rem',
+                border: '1px solid rgba(100,255,218,0.2)',
+                borderRadius: 1.5,
+                gap: 1,
+                '&:hover': { color: 'primary.main', borderColor: 'primary.main', bgcolor: 'rgba(100,255,218,0.05)' },
+              }}
+            >
+              {isDark ? <LightModeOutlinedIcon fontSize="small" /> : <DarkModeOutlinedIcon fontSize="small" />}
+              {isDark ? 'Light Mode' : 'Dark Mode'}
+            </Button>
+          </ListItem>
+          <ListItem sx={{ mt: 1, px: 0 }}>
             <Button
               fullWidth
               onClick={toggleLanguage}
