@@ -2,7 +2,7 @@ export const personal = {
   name: 'Pedro Rodolfo Gil Alfaro',
   firstName: 'Pedro',
   title: 'Full Stack Developer',
-  email: 'pedrorodolfo.gil@email.com',
+  email: 'pedrorodolfo.gil@gmail.com',
   phone: '+502 5466-1715',
   linkedin: 'https://www.linkedin.com/in/pedrogildev/',
   github: 'https://github.com/Pedrotwelve12',
