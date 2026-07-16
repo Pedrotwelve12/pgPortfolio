@@ -15,4 +15,4 @@ npm run dev
 
 - **Frontend**: React 18, Vite 5, Material UI v6
 - **Deployment**: GitHub Pages via GitHub Actions
-- **Contact**: Formspree (no backend required)
+
