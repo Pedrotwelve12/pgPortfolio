@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "greeting": "// Hello, World! I'm",
+    "getInTouch": "Get In Touch",
+    "viewProjects": "View Projects",
+    "resume": "Resume",
+    "scrollDown": "Scroll to About section",
+    "summary": "Full Stack Developer with over 4 years of hands-on experience designing and building scalable web applications. Skilled in TypeScript, JavaScript, React, Node.js, and NestJS. Experienced with AWS services (Lambda, API Gateway, DynamoDB), REST and GraphQL APIs, and robust unit testing with Jest and Vitest. Committed to clean code, performance optimization, and modular architecture.",
+    "stats": {
+      "yearsExp": "Years Experience",
+      "cloudNative": "Cloud Native",
+      "primaryStack": "Primary Stack",
+      "englishLevel": "English Level"
+    }
+  },
+  "about": {
+    "sectionLabel": "01. about_me",
+    "title": "About Me",
+    "metrics": {
+      "yearsExp": "Years Experience",
+      "technologies": "Technologies",
+      "cloudPlatform": "Cloud Platform",
+      "methodology": "Team Methodology"
+    },
+    "bio1": "I'm a <highlight>Full Stack Developer</highlight> based in Guatemala with over <highlight>4 years</highlight> of hands-on experience designing and building scalable web applications.",
+    "bio2": "At <strong>Telus International Guatemala</strong>, I worked on TELUS Smart Home 2.0 — a large-scale IoT platform on AWS — building serverless microservices, enhancing React frontends, and contributing to observability, CI/CD, and IaC with AWS CDK.",
+    "bio3": "I'm passionate about clean code, modular architecture, and continuously expanding my skill set. I bring a strong foundation in OOP and a proven record delivering production-quality software in Agile teams.",
+    "sidebar": {
+      "education": "Education",
+      "languages": "Languages"
+    }
+  },
+  "skills": {
+    "sectionLabel": "02. technical_skills",
+    "title": "Skills & Technologies"
+  },
+  "projects": {
+    "sectionLabel": "03. featured_projects",
+    "title": "Projects"
+  },
+  "experience": {
+    "sectionLabel": "04. work_experience",
+    "title": "Experience",
+    "types": {
+      "fullTime": "Full-time",
+      "internship": "Internship"
+    },
+    "jobs": {
+      "1": {
+        "role": "Full Stack Developer",
+        "highlights": [
+          "Developed cloud-native microservices for TELUS Smart Home 2.0 IoT platform on AWS.",
+          "Built serverless backends with TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge, and SQS.",
+          "Implemented Infrastructure as Code using AWS CDK across multiple accounts and environments.",
+          "Designed and enhanced REST and GraphQL APIs collaborating with distributed Agile teams.",
+          "Built frontend features with React, React Query, and Material UI using reusable component architecture.",
+          "Contributed to authorization and RBAC / policy-based access-control initiatives.",
+          "Implemented observability with CloudWatch, Route 53 Health Checks, AWS X-Ray, and structured logging.",
+          "Led unit and integration testing efforts using Jest and Vitest."
+        ]
+      },
+      "2": {
+        "role": "Senior Analyst",
+        "highlights": [
+          "Verified and processed sales orders ensuring contractual accuracy.",
+          "Managed customer billing, provided statements, and accepted payments (EFT, ACH, credit cards).",
+          "Resolved customer issues and performed assigned accounting tasks."
+        ]
+      },
+      "3": {
+        "role": "Collections Associate / Process Leader",
+        "highlights": [
+          "Managed high-volume account portfolio of up to 5,000 accounts.",
+          "Automated and improved collections processes using Excel, Python, and UIPath.",
+          "Sent invoices and statements; confirmed pricing, shipping, and contracts."
+        ]
+      },
+      "4": {
+        "role": "Accounting Intern",
+        "highlights": [
+          "Reconciled payable/receivable accounts and generated financial reports.",
+          "Managed general ledger and internal accounting software.",
+          "Created Excel-based reporting dashboards."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "sectionLabel": "05. get_in_touch",
+    "title": "Contact Me",
+    "intro": "I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "location": "Location",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "alerts": {
+      "allRequired": "All fields are required.",
+      "invalidEmail": "Please enter a valid email address.",
+      "openingClient": "Opening your email client..."
+    }
+  },
+  "footer": {
+    "builtBy": "Designed & Built by",
+    "stack": "React + Material UI · Deployed on GitHub Pages"
+  }
+}

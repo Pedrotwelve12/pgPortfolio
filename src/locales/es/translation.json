@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "hireMe": "Contrátame"
+  },
+  "hero": {
+    "greeting": "// ¡Hola, Mundo! Soy",
+    "getInTouch": "Contáctame",
+    "viewProjects": "Ver Proyectos",
+    "resume": "Currículum",
+    "scrollDown": "Ir a la sección Sobre mí",
+    "summary": "Desarrollador Full Stack con más de 4 años de experiencia práctica diseñando y construyendo aplicaciones web escalables. Especializado en TypeScript, JavaScript, React, Node.js y NestJS. Con experiencia en servicios de AWS (Lambda, API Gateway, DynamoDB), APIs REST y GraphQL, y pruebas unitarias con Jest y Vitest. Comprometido con el código limpio, la optimización del rendimiento y la arquitectura modular.",
+    "stats": {
+      "yearsExp": "Años de Experiencia",
+      "cloudNative": "Cloud Nativo",
+      "primaryStack": "Stack Principal",
+      "englishLevel": "Nivel de Inglés"
+    }
+  },
+  "about": {
+    "sectionLabel": "01. sobre_mí",
+    "title": "Sobre Mí",
+    "metrics": {
+      "yearsExp": "Años de Experiencia",
+      "technologies": "Tecnologías",
+      "cloudPlatform": "Plataforma Cloud",
+      "methodology": "Metodología de Equipo"
+    },
+    "bio1": "Soy un <highlight>Desarrollador Full Stack </highlight> con sede en Guatemala, con más de <highlight>4 años</highlight> de experiencia práctica diseñando y construyendo aplicaciones web escalables.",
+    "bio2": "En <strong>Telus International Guatemala</strong>, trabajé en TELUS Smart Home 2.0 — una plataforma IoT a gran escala en AWS — construyendo microservicios sin servidor, mejorando frontends en React y contribuyendo a la observabilidad, CI/CD e IaC con AWS CDK.",
+    "bio3": "Me apasionan el código limpio, la arquitectura modular y ampliar constantemente mis habilidades. Tengo una sólida base en POO y un historial comprobado entregando software de calidad en producción dentro de equipos ágiles.",
+    "sidebar": {
+      "education": "Educación",
+      "languages": "Idiomas"
+    }
+  },
+  "skills": {
+    "sectionLabel": "02. habilidades_técnicas",
+    "title": "Habilidades y Tecnologías"
+  },
+  "projects": {
+    "sectionLabel": "03. proyectos_destacados",
+    "title": "Proyectos"
+  },
+  "experience": {
+    "sectionLabel": "04. experiencia_laboral",
+    "title": "Experiencia",
+    "types": {
+      "fullTime": "Tiempo completo",
+      "internship": "Pasant\u00eda"
+    },
+    "jobs": {
+      "1": {
+        "role": "Desarrollador Full Stack",
+        "highlights": [
+          "Desarroll\u00e9 microservicios cloud-native para la plataforma IoT TELUS Smart Home 2.0 en AWS.",
+          "Constru\u00ed backends serverless con TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge y SQS.",
+          "Implement\u00e9 Infraestructura como C\u00f3digo con AWS CDK en m\u00faltiples cuentas y entornos.",
+          "Dise\u00f1\u00e9 y mejor\u00e9 APIs REST y GraphQL colaborando con equipos \u00e1giles distribuidos.",
+          "Desarroll\u00e9 funcionalidades frontend con React, React Query y Material UI usando arquitectura de componentes reutilizables.",
+          "Contribu\u00ed a iniciativas de autorizaci\u00f3n y control de acceso basado en roles (RBAC).",
+          "Implement\u00e9 observabilidad con CloudWatch, Route 53 Health Checks, AWS X-Ray y registro estructurado.",
+          "Lider\u00e9 esfuerzos de pruebas unitarias e integraci\u00f3n usando Jest y Vitest."
+        ]
+      },
+      "2": {
+        "role": "Analista Senior",
+        "highlights": [
+          "Verifiqu\u00e9 y proces\u00e9 \u00f3rdenes de venta garantizando precisi\u00f3n contractual.",
+          "Gestion\u00e9 facturaci\u00f3n a clientes, proporcion\u00e9 estados de cuenta y proces\u00e9 pagos (EFT, ACH, tarjetas de cr\u00e9dito).",
+          "Resolv\u00ed problemas de clientes y realic\u00e9 tareas de contabilidad asignadas."
+        ]
+      },
+      "3": {
+        "role": "Asociado de Cobranzas / L\u00edder de Proceso",
+        "highlights": [
+          "Gestion\u00e9 portafolio de cuentas de alto volumen de hasta 5,000 cuentas.",
+          "Automatic\u00e9 y mejor\u00e9 procesos de cobranza utilizando Excel, Python y UIPath.",
+          "Env\u00ed\u00e9 facturas y estados de cuenta; confirm\u00e9 precios, env\u00edos y contratos."
+        ]
+      },
+      "4": {
+        "role": "Practicante de Contabilidad",
+        "highlights": [
+          "Concili\u00e9 cuentas por pagar/cobrar y gener\u00e9 informes financieros.",
+          "Administr\u00e9 el libro mayor y software interno de contabilidad.",
+          "Cre\u00e9 paneles de informes basados en Excel."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "sectionLabel": "05. contáctame",
+    "title": "Contáctame",
+    "intro": "Actualmente estoy abierto a nuevas oportunidades. Ya sea que tengas una pregunta, una idea de proyecto o simplemente quieras saludar, ¡mi bandeja de entrada siempre está abierta!",
+    "email": "Correo",
+    "linkedin": "LinkedIn",
+    "location": "Ubicación",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje"
+    },
+    "alerts": {
+      "allRequired": "Todos los campos son obligatorios.",
+      "invalidEmail": "Por favor ingresa una dirección de correo válida.",
+      "openingClient": "Abriendo tu cliente de correo..."
+    }
+  },
+  "footer": {
+    "builtBy": "Diseñado y Desarrollado por",
+    "stack": "React + Material UI · Desplegado en GitHub Pages"
+  }
+}
