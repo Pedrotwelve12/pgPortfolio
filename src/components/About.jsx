@@ -12,7 +12,7 @@ import { useInView } from 'react-intersection-observer';
 import { personal, education, languages } from '../data/portfolioData';
 
 const METRICS_CONFIG = [
-  { Icon: WorkOutlineIcon, value: '3+', tKey: 'about.metrics.yearsExp' },
+  { Icon: WorkOutlineIcon, value: '4+', tKey: 'about.metrics.yearsExp' },
   { Icon: CodeIcon, value: '10+', tKey: 'about.metrics.technologies' },
   { Icon: CloudOutlinedIcon, value: 'AWS', tKey: 'about.metrics.cloudPlatform' },
   { Icon: GroupsOutlinedIcon, value: 'Agile', tKey: 'about.metrics.methodology' },

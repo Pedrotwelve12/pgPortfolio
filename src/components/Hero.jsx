@@ -46,7 +46,7 @@ export default function Hero() {
   const scrollTo = (id) => document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
 
   const STATS = [
-    { value: '3+', label: t('hero.stats.yearsExp') },
+    { value: '4+', label: t('hero.stats.yearsExp') },
     { value: 'AWS', label: t('hero.stats.cloudNative') },
     { value: 'TS / JS', label: t('hero.stats.primaryStack') },
     { value: 'C1', label: t('hero.stats.englishLevel') },
