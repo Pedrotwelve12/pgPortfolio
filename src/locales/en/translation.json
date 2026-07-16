@@ -31,7 +31,7 @@
       "methodology": "Team Methodology"
     },
     "bio1": "I'm a <highlight>Full Stack Developer</highlight> based in Guatemala with over <highlight>4 years</highlight> of hands-on experience designing and building scalable web applications.",
-    "bio2": "At <strong>Telus International Guatemala</strong>, I worked on TELUS Smart Home 2.0 — a large-scale IoT platform on AWS — building serverless microservices, enhancing React frontends, and contributing to observability, CI/CD, and IaC with AWS CDK.",
+    "bio2": "At <strong>Telus Digital Guatemala</strong>, I worked on TELUS Smart Home 2.0 — a large-scale IoT platform on AWS — building serverless microservices, enhancing React frontends, and contributing to observability, CI/CD, and IaC with AWS CDK.",
     "bio3": "I'm passionate about clean code, modular architecture, and continuously expanding my skill set. I bring a strong foundation in OOP and a proven record delivering production-quality software in Agile teams.",
     "sidebar": {
       "education": "Education",

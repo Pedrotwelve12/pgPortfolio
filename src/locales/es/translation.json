@@ -31,7 +31,7 @@
       "methodology": "Metodología de Equipo"
     },
     "bio1": "Soy un <highlight>Desarrollador Full Stack </highlight> con sede en Guatemala, con más de <highlight>4 años</highlight> de experiencia práctica diseñando y construyendo aplicaciones web escalables.",
-    "bio2": "En <strong>Telus International Guatemala</strong>, trabajé en TELUS Smart Home 2.0 — una plataforma IoT a gran escala en AWS — construyendo microservicios sin servidor, mejorando frontends en React y contribuyendo a la observabilidad, CI/CD e IaC con AWS CDK.",
+    "bio2": "En <strong>Telus Digital Guatemala</strong>, trabajé en TELUS Smart Home 2.0 — una plataforma IoT a gran escala en AWS — construyendo microservicios sin servidor, mejorando frontends en React y contribuyendo a la observabilidad, CI/CD e IaC con AWS CDK.",
     "bio3": "Me apasionan el código limpio, la arquitectura modular y ampliar constantemente mis habilidades. Tengo una sólida base en POO y un historial comprobado entregando software de calidad en producción dentro de equipos ágiles.",
     "sidebar": {
       "education": "Educación",

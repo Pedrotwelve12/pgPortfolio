@@ -73,7 +73,7 @@ export const experience = [
   {
     id: 1,
     role: 'Full Stack Developer',
-    company: 'Telus International Guatemala',
+    company: 'Telus Digital',
     period: 'Oct 2022 – May 2026',
     type: 'Full-time',
     highlights: [
