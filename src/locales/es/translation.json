@@ -57,14 +57,19 @@
       "1": {
         "role": "Desarrollador Full Stack",
         "highlights": [
-          "Desarroll\u00e9 microservicios cloud-native para la plataforma IoT TELUS Smart Home 2.0 en AWS.",
-          "Constru\u00ed backends serverless con TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge y SQS.",
-          "Implement\u00e9 Infraestructura como C\u00f3digo con AWS CDK en m\u00faltiples cuentas y entornos.",
-          "Dise\u00f1\u00e9 y mejor\u00e9 APIs REST y GraphQL colaborando con equipos \u00e1giles distribuidos.",
-          "Desarroll\u00e9 funcionalidades frontend con React, React Query y Material UI usando arquitectura de componentes reutilizables.",
-          "Contribu\u00ed a iniciativas de autorizaci\u00f3n y control de acceso basado en roles (RBAC).",
-          "Implement\u00e9 observabilidad con CloudWatch, Route 53 Health Checks, AWS X-Ray y registro estructurado.",
-          "Lider\u00e9 esfuerzos de pruebas unitarias e integraci\u00f3n usando Jest y Vitest."
+          "Desarrollé y mantuve microservicios cloud-native y aplicaciones web para TELUS Smart Home, una plataforma IoT a gran escala sobre AWS.",
+          "Implementé soluciones backend serverless usando TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge y SQS.",
+          "Desarrollé infraestructura como código con AWS CDK para aprovisionar y gestionar recursos en múltiples cuentas y entornos de AWS.",
+          "Diseñé y mejoré APIs REST y GraphQL colaborando con equipos distribuidos bajo metodologías ágiles.",
+          "Participé en iniciativas de autorización, control de acceso basado en políticas y gestión de roles.",
+          "Implementé monitoreo, observabilidad y verificaciones de salud operacional usando CloudWatch, Route 53 Health Checks, AWS X-Ray y registro estructurado.",
+          "Colaboré en pipelines de CI/CD, validaciones automatizadas, despliegues y procesos de cumplimiento de infraestructura.",
+          "Desarrollé y mantuve librerías compartidas, SDKs reutilizables y herramientas de plataforma utilizadas por múltiples microservicios.",
+          "Lideré esfuerzos de pruebas unitarias e integración con Jest y Vitest para garantizar la calidad y estabilidad de la aplicación.",
+          "Participé en la implementación de feature flags, gestión de configuración en tiempo de ejecución y resolución de incidentes en producción.",
+          "Desarrollé y mantuve aplicaciones React escalables usando TypeScript, React Query y Material UI.",
+          "Diseñé librerías de componentes reutilizables, hooks personalizados y patrones frontend compartidos para mejorar la mantenibilidad y productividad del equipo.",
+          "Colaboré con equipos de UX y backend para entregar interfaces de usuario responsivas, accesibles y listas para producción."
         ]
       },
       "2": {

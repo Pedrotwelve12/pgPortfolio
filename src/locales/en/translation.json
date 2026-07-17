@@ -57,14 +57,19 @@
       "1": {
         "role": "Full Stack Developer",
         "highlights": [
-          "Developed cloud-native microservices for TELUS Smart Home 2.0 IoT platform on AWS.",
-          "Built serverless backends with TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge, and SQS.",
-          "Implemented Infrastructure as Code using AWS CDK across multiple accounts and environments.",
-          "Designed and enhanced REST and GraphQL APIs collaborating with distributed Agile teams.",
-          "Built frontend features with React, React Query, and Material UI using reusable component architecture.",
-          "Contributed to authorization and RBAC / policy-based access-control initiatives.",
-          "Implemented observability with CloudWatch, Route 53 Health Checks, AWS X-Ray, and structured logging.",
-          "Led unit and integration testing efforts using Jest and Vitest."
+          "Developed and maintained cloud-native microservices and web applications for TELUS Smart Home, a large-scale IoT platform running on AWS.",
+          "Implemented serverless backend solutions using TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge, and SQS.",
+          "Developed infrastructure as code using AWS CDK to provision and manage resources across multiple AWS accounts and environments.",
+          "Designed and improved REST and GraphQL APIs collaborating with distributed teams under Agile methodologies.",
+          "Participated in authorization and policy-based access control initiatives and role management.",
+          "Implemented monitoring, observability, and operational health checks using CloudWatch, Route 53 Health Checks, AWS X-Ray, and structured logging.",
+          "Collaborated on CI/CD pipelines, automated validations, deployments, and infrastructure compliance processes.",
+          "Developed and maintained shared libraries, reusable SDKs, and platform tools used by multiple microservices.",
+          "Led unit and integration testing efforts using Jest and Vitest to ensure application quality and stability.",
+          "Participated in the implementation of feature flags, runtime configuration management, and production incident resolution.",
+          "Developed and maintained scalable React applications using TypeScript, React Query, and Material UI.",
+          "Designed reusable component libraries, custom hooks, and shared frontend patterns to improve maintainability and developer productivity.",
+          "Collaborated with UX and backend teams to deliver responsive, accessible, and production-ready user interfaces."
         ]
       },
       "2": {

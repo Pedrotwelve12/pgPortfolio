@@ -13,22 +13,23 @@ export const personal = {
 };
 
 export const skills = [
+  // Row 1
   {
     category: 'Languages',
     items: [
       { name: 'TypeScript', icon: 'devicon-typescript-plain colored' },
       { name: 'JavaScript', icon: 'devicon-javascript-plain colored' },
       { name: 'Java', icon: 'devicon-java-plain colored' },
-      { name: 'Python', icon: 'devicon-python-plain colored' },
+      { name: 'C# / .NET', icon: 'devicon-csharp-plain colored' },
     ],
   },
   {
     category: 'Frontend',
     items: [
       { name: 'React', icon: 'devicon-react-original colored' },
+      { name: 'React Query', icon: 'devicon-react-original colored' },
       { name: 'Material UI', icon: 'devicon-materialui-plain colored' },
-      { name: 'HTML5', icon: 'devicon-html5-plain colored' },
-      { name: 'CSS3', icon: 'devicon-css3-plain colored' },
+      { name: 'HTML5 / CSS3', icon: 'devicon-html5-plain colored' },
     ],
   },
   {
@@ -37,34 +38,64 @@ export const skills = [
       { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
       { name: 'NestJS', icon: 'devicon-nestjs-plain colored' },
       { name: 'Express', icon: 'devicon-express-original' },
+      { name: 'ASP.NET Core', icon: 'devicon-dot-net-plain colored' },
       { name: 'GraphQL', icon: 'devicon-graphql-plain colored' },
     ],
   },
+  // Row 2
   {
-    category: 'Cloud & DevOps',
+    category: 'Cloud & Serverless',
     items: [
-      { name: 'AWS Lambda', icon: 'devicon-amazonwebservices-original colored' },
-      { name: 'S3 / CloudFront', icon: 'devicon-amazonwebservices-original colored' },
-      { name: 'DynamoDB', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'AWS Lambda', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/awslambda.svg', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'API Gateway', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/amazonapigateway.svg', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'DynamoDB', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/amazondynamodb.svg', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'EventBridge / SQS', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/amazonsqs.svg', icon: 'devicon-amazonwebservices-original colored' },
+    ],
+  },
+  {
+    category: 'DevOps & IaC',
+    items: [
       { name: 'AWS CDK', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'CI/CD Pipeline', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'CloudWatch / X-Ray', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/amazoncloudwatch.svg', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'Multi-Account AWS', icon: 'devicon-amazonwebservices-original colored' },
     ],
   },
   {
-    category: 'Databases',
-    items: [
-      { name: 'DynamoDB', icon: 'devicon-amazonwebservices-original colored' },
-      { name: 'SQL / Oracle', icon: 'devicon-oracle-original colored' },
-      { name: 'Amazon RDS', icon: 'devicon-amazonwebservices-original colored' },
-      { name: 'T-SQL', icon: 'devicon-microsoftsqlserver-plain colored' },
-    ],
-  },
-  {
-    category: 'Testing & Tools',
+    category: 'Testing',
     items: [
       { name: 'Jest', icon: 'devicon-jest-plain colored' },
       { name: 'Vitest', icon: 'devicon-vitest-plain colored' },
+      { name: 'Cypress', icon: 'devicon-cypressio-plain colored' },
+      { name: 'MSW', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/mockserviceworker.svg', icon: 'devicon-jest-plain colored' },
+    ],
+  },
+  // Row 3
+  {
+    category: 'Databases',
+    items: [
+      { name: 'DynamoDB', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/amazondynamodb.svg', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored' },
+      { name: 'Amazon RDS', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@12/icons/amazonrds.svg', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'SQL / Oracle', icon: 'devicon-oracle-original colored' },
+    ],
+  },
+  {
+    category: 'Architecture',
+    items: [
+      { name: 'Microservices', icon: 'devicon-nestjs-plain colored' },
+      { name: 'Event-Driven', icon: 'devicon-amazonwebservices-original colored' },
+      { name: 'DDD / Monorepo', icon: 'devicon-github-original colored' },
+      { name: 'Scrum / Agile', icon: 'devicon-jira-plain colored' },
+    ],
+  },
+  {
+    category: 'Tools',
+    items: [
       { name: 'Git', icon: 'devicon-git-plain colored' },
       { name: 'VS Code', icon: 'devicon-vscode-plain colored' },
+      { name: 'IntelliJ IDEA', icon: 'devicon-intellij-plain colored' },
+      { name: 'Apache NetBeans', icon: 'devicon-apache-plain colored' },
     ],
   },
 ];
@@ -77,16 +108,21 @@ export const experience = [
     period: 'Oct 2022 – May 2026',
     type: 'Full-time',
     highlights: [
-      'Developed cloud-native microservices for TELUS Smart Home 2.0 IoT platform on AWS.',
-      'Built serverless backends with TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge, and SQS.',
-      'Implemented Infrastructure as Code using AWS CDK across multiple accounts and environments.',
-      'Designed and enhanced REST and GraphQL APIs collaborating with distributed Agile teams.',
-      'Built frontend features with React, React Query, and Material UI using reusable component architecture.',
-      'Contributed to authorization and RBAC / policy-based access-control initiatives.',
-      'Implemented observability with CloudWatch, Route 53 Health Checks, AWS X-Ray, and structured logging.',
-      'Led unit and integration testing efforts using Jest and Vitest.',
+      'Developed and maintained cloud-native microservices and web applications for TELUS Smart Home, a large-scale IoT platform on AWS.',
+      'Implemented serverless backend solutions using TypeScript, Node.js, AWS Lambda, API Gateway, DynamoDB, EventBridge, and SQS.',
+      'Developed infrastructure as code using AWS CDK to provision and manage resources across multiple AWS accounts and environments.',
+      'Designed and improved REST and GraphQL APIs collaborating with distributed teams under Agile methodologies.',
+      'Participated in authorization and policy-based access control initiatives and role management.',
+      'Implemented monitoring, observability, and operational health checks using CloudWatch, Route 53, AWS X-Ray, and structured logging.',
+      'Collaborated on CI/CD pipelines, automated validations, deployments, and infrastructure compliance processes.',
+      'Developed and maintained shared libraries, reusable SDKs, and platform tools used by multiple microservices.',
+      'Led unit and integration testing efforts using Jest and Vitest to ensure application quality and stability.',
+      'Participated in feature flags, runtime configuration management, and production incident resolution.',
+      'Developed and maintained scalable React applications using TypeScript, React Query, and Material UI.',
+      'Designed reusable component libraries, custom hooks, and shared frontend patterns to improve maintainability.',
+      'Collaborated with UX and backend teams to deliver responsive, accessible, and production-ready user interfaces.',
     ],
-    tech: ['TypeScript', 'Node.js', 'React', 'AWS Lambda', 'DynamoDB', 'GraphQL', 'NestJS', 'Material UI', 'AWS CDK', 'Jest'],
+    tech: ['TypeScript', 'Node.js', 'React', 'React Query', 'AWS Lambda', 'DynamoDB', 'EventBridge', 'GraphQL', 'NestJS', 'AWS CDK', 'Jest', 'CI/CD'],
   },
   {
     id: 2,

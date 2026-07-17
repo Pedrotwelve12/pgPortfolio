@@ -1,8 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Box, Container, Grid, Typography, Tooltip } from '@mui/material';
+import { Box, Container, Grid, Typography, useTheme } from '@mui/material';
 import { useInView } from 'react-intersection-observer';
 import { skills } from '../data/portfolioData';
+
+function SkillItem({ item }) {
+  const [imgFailed, setImgFailed] = useState(false);
+  const theme = useTheme();
+  const isDark = theme.palette.mode === 'dark';
+
+  const imgFilter = isDark
+    ? 'brightness(0) invert(1) opacity(0.85)'
+    : 'brightness(0) opacity(0.6)';
+
+  let icon;
+  if (item.iconUrl && !imgFailed) {
+    icon = (
+      <img
+        src={item.iconUrl}
+        alt={item.name}
+        width={20}
+        height={20}
+        style={{ flexShrink: 0, objectFit: 'contain', filter: imgFilter }}
+        onError={() => setImgFailed(true)}
+      />
+    );
+  } else if (item.icon) {
+    icon = <i className={item.icon} style={{ fontSize: 20, flexShrink: 0 }} />;
+  } else {
+    icon = <Box sx={{ width: 20, flexShrink: 0 }} />;
+  }
+
+  return (
+    <Box
+      sx={{
+        display: 'flex', alignItems: 'center', gap: 1,
+        py: 0.8, px: 1, borderRadius: 2, cursor: 'default',
+        overflow: 'hidden',
+        '&:hover': { bgcolor: 'rgba(100,255,218,0.05)' },
+        transition: 'bg 0.2s',
+      }}
+    >
+      {icon}
+      <Typography
+        variant="body2"
+        sx={{
+          color: 'text.secondary', fontSize: '0.78rem',
+          whiteSpace: 'nowrap', overflow: 'hidden',
+          textOverflow: 'ellipsis', minWidth: 0,
+        }}
+      >
+        {item.name}
+      </Typography>
+    </Box>
+  );
+}
 
 function SkillCard({ skill, delay }) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -31,24 +83,7 @@ function SkillCard({ skill, delay }) {
       </Typography>
       <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 1.5 }}>
         {skill.items.map((item) => (
-          <Tooltip key={item.name} title={item.name} arrow placement="top">
-            <Box
-              sx={{
-                display: 'flex', alignItems: 'center', gap: 1.2,
-                py: 0.8, px: 1, borderRadius: 2, cursor: 'default',
-                '&:hover': { bgcolor: 'rgba(100,255,218,0.05)' },
-                transition: 'bg 0.2s',
-              }}
-            >
-              <i className={item.icon} style={{ fontSize: 22, flexShrink: 0 }} />
-              <Typography
-                variant="body2"
-                sx={{ color: 'text.secondary', fontSize: '0.8rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
-              >
-                {item.name}
-              </Typography>
-            </Box>
-          </Tooltip>
+          <SkillItem key={item.name} item={item} />
         ))}
       </Box>
     </Box>
